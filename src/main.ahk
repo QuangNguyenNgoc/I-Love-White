@@ -9,16 +9,16 @@
 ; ============================================================================
 ; INCLUDES
 ; ============================================================================
-#Include "lib\Gdip_All.ahk"
-#Include "lib\Gdip_ImageSearch.ahk"
-#Include "lib\JSON.ahk"
-#Include "lib\Roblox.ahk"
-#Include "lib\HyperSleep.ahk"
+#Include "..\lib\Gdip_All.ahk"
+#Include "..\lib\Gdip_ImageSearch.ahk"
+#Include "..\lib\JSON.ahk"
+#Include "..\lib\Roblox.ahk"
+#Include "..\lib\HyperSleep.ahk"
 
-#Include "src\core\image-tracker.ahk"
-#Include "src\core\screen-capture.ahk"
-#Include "src\utils\logger.ahk"
-#Include "src\utils\config.ahk"
+#Include "core\image-tracker.ahk"
+#Include "core\screen-capture.ahk"
+#Include "utils\logger.ahk"
+#Include "utils\config.ahk"
 
 ; ============================================================================
 ; GLOBAL VARIABLES
