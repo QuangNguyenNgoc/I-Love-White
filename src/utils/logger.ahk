@@ -3,7 +3,7 @@
 ;**********************************************************************************
 
 global LOG_LEVEL := "INFO"  ; DEBUG, INFO, WARN, ERROR
-global LOG_FILE := "data\logs\macro.log"
+global LOG_FILE := A_ScriptDir "\..\data\logs\macro.log"
 
 ; Internal log function
 _Log(level, message) {

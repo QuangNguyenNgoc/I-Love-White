@@ -2,7 +2,7 @@
 ; Config - Configuration management
 ;**********************************************************************************
 
-global CONFIG_FILE := "data\config.json"
+global CONFIG_FILE := A_ScriptDir "\..\data\config.json"
 
 ; Load configuration from JSON file
 LoadConfig() {
