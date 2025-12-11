@@ -1,0 +1,23 @@
+# Logs
+data/logs/
+
+# Screenshots
+data/*.png
+
+# Local config overrides
+data/config.local.json
+
+# IDE
+.vscode/
+*.code-workspace
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temp
+*.tmp
+*.bak
+
+# Custom
+*.code-workspace

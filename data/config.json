@@ -1,0 +1,16 @@
+{
+  "updateInterval": 100,
+  "screenshotOnStart": false,
+  "logLevel": "INFO",
+  "trackHoney": true,
+  "trackPollen": true,
+  "autoKeys": {
+    "enabled": false,
+    "interval": 1000,
+    "keys": ["1", "2", "3"]
+  },
+  "alerts": {
+    "enabled": true,
+    "sound": true
+  }
+}
