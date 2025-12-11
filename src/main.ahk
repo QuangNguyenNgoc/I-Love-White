@@ -92,22 +92,28 @@ F1::{
     
     if isRunning {
         LogInfo("Tracking started!")
+        MsgBox "Tracking started!", "Info", "Iconi T2"
         MainLoop()
     } else {
         LogInfo("Tracking stopped!")
+        MsgBox "Tracking stopped!", "Info", "Iconi T2"
     }
 }
 
 ; F2 - Take screenshot (for testing)
 F2::{
+    global windowX, windowY, windowWidth, windowHeight
     if GetRobloxHWND() {
         GetRobloxClientPos()
         pBM := Gdip_BitmapFromScreen(windowX "|" windowY "|" windowWidth "|" windowHeight)
-        Gdip_SaveBitmapToFile(pBM, "data\screenshot_" A_Now ".png")
+        savePath := A_ScriptDir "\..\data\screenshot_" A_Now ".png"
+        Gdip_SaveBitmapToFile(pBM, savePath)
         Gdip_DisposeImage(pBM)
-        LogInfo("Screenshot saved!")
+        LogInfo("Screenshot saved: " savePath)
+        MsgBox "Screenshot saved!`n" savePath, "Success", "Iconi T2"
     } else {
         LogWarn("Roblox not found!")
+        MsgBox "Roblox not found!", "Warning", "Icon! T2"
     }
 }
 
